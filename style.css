@@ -1,0 +1,96 @@
+* {
+  /* box-sizing: border-box; */
+  margin: 0;
+  padding: 0;
+}
+body{
+ width:100vw;
+ height:100vh;
+ overflow: hidden;
+}
+.main{
+  background-image: url(images/car_main.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width:100vw;
+  height:100vh;
+  opacity:0.85;
+  z-index:-1;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-around; */
+}
+.overlay{
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  color: #FFFFFF;
+  justify-content: center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 5px;
+}
+h2{
+  font-size: 70px;
+  color:whitesmoke;
+  margin: 4px auto;
+}
+
+.btn {
+  width:80px;
+  height:40px;
+  padding:2px;
+  background-color:red;
+  border-radius: 6px;
+  margin:2px auto;
+  border:none;
+  cursor: pointer;
+  
+}
+.btn:hover{
+  background-color: rgb(41, 41, 41);
+  width:85px;
+  height:45px;
+  padding:3px;
+  cursor: pointer;
+  
+}
+a{
+  color:white;
+  text-decoration: none;
+}
+.color{
+  animation: colorchange  1s infinite;
+}
+@keyframes colorchange
+{
+	0%{
+		color: red;
+	}
+	16.6%
+	{
+		color:orange;
+	}
+	33.2%
+	{
+		color:yellow;
+	}
+	49.8%
+	{
+		color: green;
+  }
+  66.8%
+  {
+    color:rgb(44, 165, 196);
+  }
+  83%
+  {
+    color:blue;
+  }
+  100% 
+  {
+    color: purple;
+  }
+}
